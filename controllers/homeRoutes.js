@@ -6,16 +6,15 @@ const path = require('path');
 
 
 
-// router.get('/', (req, res) => {
-//     console.log("helloHello00000");
-//     res.sendFile(path.join(__dirname, "../public/index.html"));
-// });
+router.get('/stats', (req, res) => {
+    console.log("/stats page hit");
+    res.sendFile(path.join(__dirname, "../public/stats.html"));
+});
 
 
 router.get('/exercise', (req, res) => {
-    console.log("helloHello");
+    console.log("/exercise page hit");
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
-
 });
 
 
