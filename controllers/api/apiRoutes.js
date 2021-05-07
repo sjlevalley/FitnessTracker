@@ -12,8 +12,8 @@ const db = require('../../models');
 router.get('/', async (req, res) => {
     console.log("api/workouts Page Hit!");
     try {
-        const prevWorkout = await db.Workout.find({});
-        res.status(200).json(prevWorkout);
+        const lastWorkout = await db.Workout.find({});
+        res.status(200).json(lastWorkout);
     } catch (err) {
         res.status(500);
     }
@@ -47,10 +47,11 @@ router.put('/:id', async (req, res) => {
 router.get('/range', async (req, res) => {
     console.log("api/workouts by Range Page Hit!");
     try {
-        const prevWorkout = await db.Workout.find({})
+        const lastWorkout = await db.Workout.find({})
             .limit(7)
             .sort({ _id: -1 });
-        const weeksWorkout = preWorkout.reverse();
+        const weeksWorkout = lastWorkout.reverse();
+        console.log(weeksWorkout);
         res.status(200).json(weeksWorkout);
     } catch (err) {
         res.status(500);
