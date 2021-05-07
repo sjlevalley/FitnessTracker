@@ -5,15 +5,19 @@ const path = require('path');
 
 
 
+router.get('/', (req, res) => {
+    console.log("Homepage hit");
+    res.sendFile(path.join(__dirname, "../public/stats.html"));
+});
 
 router.get('/stats', (req, res) => {
-    console.log("/stats page hit");
+    console.log("Stats page hit");
     res.sendFile(path.join(__dirname, "../public/stats.html"));
 });
 
 
 router.get('/exercise', (req, res) => {
-    console.log("/exercise page hit");
+    console.log("Exercise page hit");
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
 });
 
