@@ -1,15 +1,17 @@
 ## FITNESS TRACKER
 
-![App Screenshot](fitnessTracker.png "Description")
-
 ![](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+# Screenshot of App
+
+![App Screenshot](fitnessTracker.png "Description")
 
 ## DESCRIPTION
 
-- This app allows the user to view, create, and track daily workout sessions as well as view past workout sessions and stats
-- This project and/or repository can be found at the following url(s)
-  - [GitHub](https://github.com/sjlevalley/FitnessTracker).
-  - [Heroku](https://immense-peak-85651.herokuapp.com/).
+Need an app where you can view past workouts, edit your workouts, or keep track of your current workout? This app can do just that.
+Using a MongoDB database and Express, users can create and save their workouts, and can come back at a later time to view their previous workouts and view statistics based on their past workouts.
+
+This app can be viewed at: https://immense-peak-85651.herokuapp.com/.
 
 ## TABLE OF CONTENTS
 
