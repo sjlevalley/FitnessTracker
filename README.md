@@ -1,5 +1,7 @@
 ## FITNESS TRACKER
 
+![App Screenshot](fitnessTracker.png "Description")
+
 ![](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## DESCRIPTION
